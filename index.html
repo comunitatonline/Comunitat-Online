@@ -1,1 +1,85 @@
-<!DOCTYPE html><html lang='ca'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Comunitat Online</title><link rel='stylesheet' href='style.css'></head><body><header><div class='container nav'><img src='logo.png' alt='Comunitat Online' class='logo'><button class='menu-toggle' id='menuToggle'>☰</button><nav id='mainMenu'><a href='#serveis'>Serveis</a><a href='#perque'>Per què nosaltres</a><a href='#contacte'>Contacte</a></nav></div></header><section class='hero'><div class='hero-overlay'><div class='container hero-content'><h1>Administració online de petites comunitats</h1><p>Especialitzats en la gestió eficient de comunitats que busquen un servei proper, transparent i digital.</p><a href='#contacte' class='btn'>Sol·licitar informació</a></div></div></section><section><div class='container'><h2>Qui som</h2><p>A Comunitat Online creiem que les comunitats petites mereixen una administració professional, transparent i adaptada a les seves necessitats. Utilitzem eines digitals per simplificar processos i millorar la comunicació.</p></div></section><section id='serveis' class='alt'><div class='container'><h2>Serveis</h2><div class='grid'><div class='card'>Gestió econòmica</div><div class='card'>Control de rebuts</div><div class='card'>Convocatòries de juntes</div><div class='card'>Redacció d'actes</div><div class='card'>Gestió d'incidències</div><div class='card'>Seguiment de proveïdors</div><div class='card'>Assessorament a presidents</div><div class='card'>Comunicació amb propietaris</div></div></div></section><section id='perque'><div class='container'><h2>Per què nosaltres</h2><p>Moltes administracions estan orientades a grans finques. Nosaltres ens enfoquem en comunitats de pocs veïns, oferint una gestió eficient, propera i adaptada a la realitat de cada finca.</p></div></section><section id='contacte' class='alt'><div class='container'><h2>Contacte</h2><form action='https://formsubmit.co/info@comunitatonline.com' method='POST'><input type='text' name='nom' placeholder='Nom' required><input type='email' name='email' placeholder='Correu electrònic' required><textarea name='missatge' placeholder='Missatge' rows='5' required></textarea><button type='submit' class='btn'>Sol·licitar informació</button></form></div></section><footer><div class='container'><p>Comunitat Online · info@comunitatonline.com</p></div></footer><script>const menuToggle=document.getElementById('menuToggle');const mainMenu=document.getElementById('mainMenu');menuToggle.addEventListener('click',()=>{mainMenu.classList.toggle('active');});</script></body></html>
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunitat Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <img src="logo.png" alt="Comunitat Online" class="logo">
+    <nav>
+      <a href="#serveis">Serveis</a>
+      <a href="#perque">Per què nosaltres</a>
+      <a href="#contacte">Contacte</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Administració online de petites comunitats</h1>
+      <p>Especialitzats en la gestió eficient per a comunitats de pocs veïns.</p>
+      <a href="#contacte" class="btn">Sol·licitar informació</a>
+    </div>
+    <div>
+      <img src="hero.jpg" alt="Comunitat de veïns">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Qui som</h2>
+    <p>A Comunitat Online creiem que les comunitats petites mereixen una administració professional, transparent i adaptada a les seves necessitats. Utilitzem eines digitals per simplificar processos i millorar la comunicació.</p>
+  </div>
+</section>
+
+<section id="serveis" class="alt">
+  <div class="container">
+    <h2>Serveis</h2>
+    <div class="grid">
+      <div class="card">Gestió econòmica</div>
+      <div class="card">Control de rebuts</div>
+      <div class="card">Convocatòries de juntes</div>
+      <div class="card">Redacció d'actes</div>
+      <div class="card">Gestió d'incidències</div>
+      <div class="card">Seguiment de proveïdors</div>
+      <div class="card">Assessorament a presidents</div>
+      <div class="card">Comunicació amb propietaris</div>
+    </div>
+  </div>
+</section>
+
+<section id="perque">
+  <div class="container">
+    <h2>Per què nosaltres</h2>
+    <p>Moltes administracions estan orientades a grans finques. Nosaltres ens enfoquem en comunitats de pocs veïns, oferint una gestió eficient, propera i adaptada a la realitat de cada finca.</p>
+  </div>
+</section>
+
+<section id="contacte" class="alt">
+  <div class="container">
+    <h2>Contacte</h2>
+    <form action="https://formsubmit.co/info@comunitatonline.com" method="POST">
+      <input type="text" name="nom" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Correu electrònic" required>
+      <input type="text" name="habitatges" placeholder="Nombre d'habitatges">
+      <textarea name="missatge" placeholder="Missatge" rows="5" required></textarea>
+      <button type="submit" class="btn">Sol·licitar informació</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Comunitat Online · info@comunitatonline.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
